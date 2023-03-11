@@ -1,11 +1,49 @@
-### Are you AFK(away from keyboard) but you still want to appear online? Maybe you just wanna troll your friends for the lulz. Say no more fam just install the requirements.txt 
+# See the Usage Section in each .py file to see what the code does
 
-```python
-pip3 install -r requirements.txt
+# 1. Create virtual python env
+```bash
+python -m venv venv && source venv/bin/activate #Linux
+python -m venv venv && \venv\Scripts\activate #Windows
 ```
 
-### then run the code below in this directory
+### Creates virtual python environment 
+```bash
+python -m venv venv 
+```
 
-```python
-python3 main.py 
+### Steps into virtual environment 
+```bash
+source .venv/bin/activate
+```
+
+### See the terminal now has the name of your virtual environment
+```bash
+(venv) drew@Andrews-MacBook-Pro% 
+```
+
+### To Step out of the virtual environment 
+```bash
+deactivate
+```
+
+# 2. Install dependencies (Inside of Virtual environment)
+```bash
+pip install -r requirements.txt
+```
+
+# 3 Run the Code
+```bash
+python main.py
+```
+
+# TROUBLESHOOTING
+```bash
+pip list
+python --version 
+pip --version 
+```
+```plain text
+If trying to do this with VS CODE ensure you have your files open on the left side aka the workspace 
+
+Command+shift+p select interpreter and chose .venv/bin python
 ```
